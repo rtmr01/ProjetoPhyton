@@ -32,8 +32,13 @@ def visualizar_livros():
 
 
 def atualizar_livro():
+    if not biblioteca:
+        print("Nenhum livro na biblioteca.")
+        return
+
     visualizar_livros()
     nome_antigo = input("Digite o nome do livro a ser atualizado: ")
+
     for i in range(len(biblioteca)):
         if biblioteca[i]["nome"] == nome_antigo:
             nome = input("Digite o novo nome do livro: ")
@@ -61,7 +66,6 @@ def atualizar_livro():
             return
 
     print("Livro não encontrado.")
-
 
 def excluir_livro_por_nome():
     global total
@@ -114,10 +118,7 @@ def buscar_por_categoria():
     else:
         print("Categoria não encontrada.")
 
-#AAAAAAAAAAAAAAAAAAAAAA
-def calcular_gastos_totais():
-    global total
-    print(f"R${total}")
+
 
 def calcular_gasto_final():
     gastofinal = 0
@@ -140,7 +141,7 @@ def calcular_gasto_final():
     print(f"Gasto final com livros: R${gastofinal}")
     return gastofinal
 
-#aaaaaaaaaaaaaaaaaaaaaaaaaaammmkkkkkkkkkkkkkkyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+
 
 def extrato_por_categoria():
     categorias = {}

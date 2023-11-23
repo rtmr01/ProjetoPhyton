@@ -1,3 +1,1 @@
 
-Nome: hp, Autor: jk, Categoria: aa, Preço: 9.0, Páginas: 100, Total: 9.0
-Nome: oo, Autor: oo, Categoria: oo, Preço: 9.0, Páginas: 100, Total: 18.0
